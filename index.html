@@ -4,24 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>เว็บไซต์ของฉัน</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-align: center;
-        }
-        h1 {
-            margin-top: 100px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🎉 สำเร็จแล้ว!</h1>
-    <p>เว็บไซต์แรกของฉันบน GitHub Pages</p>
-    <p>URL: https://username.github.io</p>
+    <header>
+        <nav>
+            <h1>เว็บไซต์ของฉัน</h1>
+            <ul>
+                <li><a href="#home">หน้าแรก</a></li>
+                <li><a href="#about">เกี่ยวกับ</a></li>
+                <li><a href="#contact">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>ยินดีต้อนรับ</h2>
+            <p>นี่คือเว็บไซต์ตัวอย่างสำหรับ GitHub Pages</p>
+            <button onclick="showMessage()">คลิกที่นี่!</button>
+        </section>
+
+        <section id="about">
+            <h2>เกี่ยวกับเรา</h2>
+            <p>เราเป็นนักพัฒนาเว็บไซต์</p>
+        </section>
+
+        <section id="contact">
+            <h2>ติดต่อเรา</h2>
+            <p>Email: example@email.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 เว็บไซต์ของฉัน</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
