@@ -3,43 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>เว็บไซต์ของฉัน</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>ร้านอาหารสุขภาพดี โรงพยาบาล [ชื่อโรงพยาบาล]</title>
+    </head>
 <body>
+
     <header>
-        <nav>
-            <h1>เว็บไซต์ของฉัน</h1>
-            <ul>
-                <li><a href="#home">หน้าแรก</a></li>
-                <li><a href="#about">เกี่ยวกับ</a></li>
-                <li><a href="#contact">ติดต่อ</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="https://via.placeholder.com/100x100?text=Logo" alt="โลโก้ร้านอาหาร" class="logo">
+            <h1>ร้านอาหาร [ชื่อร้าน]</h1>
+            <p>ภายในโรงพยาบาล [ชื่อโรงพยาบาล]</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#menu">เมนูอาหาร</a></li>
+                    <li><a href="#special-menu">เมนูพิเศษสำหรับผู้ป่วย</a></li>
+                    <li><a href="#location">ที่ตั้ง & เวลาทำการ</a></li>
+                    <li><a href="#contact">ติดต่อ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="home">
-            <h2>ยินดีต้อนรับ</h2>
-            <p>นี่คือเว็บไซต์ตัวอย่างสำหรับ GitHub Pages</p>
-            <button onclick="showMessage()">คลิกที่นี่!</button>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>สุขภาพดี เริ่มต้นที่จานอาหาร</h2>
+                <p>บริการอาหารอร่อย สะอาด มีประโยชน์ พร้อมดูแลสุขภาพของคุณและคนที่คุณรัก</p>
+                <a href="#menu" class="button">ดูเมนูของเรา</a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>เกี่ยวกับเรา</h2>
-            <p>เราเป็นนักพัฒนาเว็บไซต์</p>
+        <section id="menu" class="menu-section">
+            <div class="container">
+                <h2>เมนูอาหารทั่วไป</h2>
+                <p>หลากหลายเมนูสำหรับทุกท่าน ทั้งบุคลากร ผู้มาเยี่ยม และผู้ป่วยที่สามารถทานอาหารปกติได้</p>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/200x150?text=ข้าวผัด" alt="ข้าวผัดกุ้ง">
+                        <h3>ข้าวผัดกุ้ง</h3>
+                        <p>ข้าวหอมมะลิผัดกับกุ้งสดและผักรวม</p>
+                        <span class="price">85 บาท</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/200x150?text=ก๋วยเตี๋ยว" alt="ก๋วยเตี๋ยวน้ำใส">
+                        <h3>ก๋วยเตี๋ยวน้ำใส</h3>
+                        <p>เส้นเล็กน้ำซุปกลมกล่อม พร้อมลูกชิ้นและหมูหมัก</p>
+                        <span class="price">70 บาท</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/200x150?text=สลัดอกไก่" alt="สลัดอกไก่">
+                        <h3>สลัดอกไก่ย่าง</h3>
+                        <p>อกไก่ย่างหมักสมุนไพร ราดน้ำสลัดบัลซามิก</p>
+                        <span class="price">90 บาท</span>
+                    </div>
+                    </div>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>ติดต่อเรา</h2>
-            <p>Email: example@email.com</p>
+        <section id="special-menu" class="special-menu-section">
+            <div class="container">
+                <h2>เมนูพิเศษสำหรับผู้ป่วย (ภายใต้คำแนะนำของแพทย์)</h2>
+                <p>เราใส่ใจสุขภาพของผู้ป่วย ด้วยเมนูที่ปรับปรุงตามหลักโภชนาการ</p>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/200x150?text=ข้าวต้มหมู" alt="ข้าวต้มหมูสับ">
+                        <h3>ข้าวต้มหมูสับ</h3>
+                        <p>ข้าวต้มอ่อนๆ กับหมูสับปรุงรส</p>
+                        <span class="price">60 บาท</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/200x150?text=โจ๊กไก่" alt="โจ๊กไก่">
+                        <h3>โจ๊กไก่ฉีก</h3>
+                        <p>โจ๊กเนื้อเนียนละเอียด พร้อมเนื้อไก่ฉีกและขิงซอย</p>
+                        <span class="price">65 บาท</span>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://via.placeholder.com/200x150?text=ปลาลวกจิ้ม" alt="ปลาลวกจิ้ม">
+                        <h3>ปลานึ่งสมุนไพร</h3>
+                        <p>ปลานึ่งเนื้อนุ่ม ปรุงรสอ่อนๆ สำหรับผู้ป่วย</p>
+                        <span class="price">120 บาท</span>
+                    </div>
+                    </div>
+                <p class="note">** โปรดปรึกษาแพทย์หรือพยาบาลก่อนสั่งเมนูสำหรับผู้ป่วย **</p>
+            </div>
+        </section>
+
+        <section id="location" class="location-section">
+            <div class="container">
+                <h2>ที่ตั้ง & เวลาทำการ</h2>
+                <p>ร้านอาหาร [ชื่อร้าน] ตั้งอยู่ที่ชั้น 1 อาคารผู้ป่วยนอก</p>
+                <p><strong>เวลาทำการ:</strong></p>
+                <ul>
+                    <li>จันทร์ - ศุกร์: 07:00 น. - 20:00 น.</li>
+                    <li>เสาร์ - อาทิตย์: 08:00 น. - 18:00 น.</li>
+                    <li>วันหยุดนักขัตฤกษ์: 08:00 น. - 18:00 น.</li>
+                </ul>
+                <div class="map-placeholder">
+                    <p>แผนที่โรงพยาบาล: [ลิงก์ไปยังแผนที่/รูปภาพแผนที่]</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.9234800262174!2d100.52843797610059!3d13.722511497216694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2992d9d1b0d2d%3A0xf6b8a8b1d9d9d9d!2sBumrungrad%20International%20Hospital!5e0!3m2!1sen!2sth!4v1700000000000!5m2!1sen!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2>ติดต่อเรา</h2>
+                <p>หากมีข้อสงสัยหรือต้องการสอบถามข้อมูลเพิ่มเติม สามารถติดต่อเราได้ที่:</p>
+                <ul>
+                    <li>โทรศัพท์: <a href="tel:021234567">02-123-4567</a></li>
+                    <li>อีเมล: <a href="mailto:info@yourhospitalrestaurant.com">info@yourhospitalrestaurant.com</a></li>
+                    <li>ช่องทางโซเชียล:
+                        <a href="#" target="_blank">Facebook</a> |
+                        <a href="#" target="_blank">Line Official</a>
+                    </li>
+                </ul>
+                <p><em>เรายินดีให้บริการทุกท่านด้วยความเอาใจใส่</em></p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 เว็บไซต์ของฉัน</p>
+        <div class="container">
+            <p>&copy; 2025 ร้านอาหาร [ชื่อร้าน] โรงพยาบาล [ชื่อโรงพยาบาล]. สงวนลิขสิทธิ์.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
